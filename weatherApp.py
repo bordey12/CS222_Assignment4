@@ -14,4 +14,6 @@ def main():
 
     for time in forecast_data['properties']['periods']:
         print(time.get('name'), "will be", time.get('temperature'), "degrees. " "Details: ", time.get('detailedForecast'))
-main()
+
+if __name__ == "__main__":
+    main()
